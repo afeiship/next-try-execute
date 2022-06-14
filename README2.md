@@ -15,7 +15,20 @@ npm install -S @jswork/next-try-execute
 ```js
 import '@jswork/next-try-execute';
 
-//DOCS here!
+const someApi = {
+  deleted: false,
+  del: function (value) {
+    this.deleted = value;
+  },
+  delete: function (value) {
+    console.warn("delete is deprecated, use del instead");
+    this.del(value);
+  },
+};
+
+console.log(someApi.deleted); // false
+nx.tryExecute(someApi, [], ["del", "delete"]);
+console.log(someApi.deleted); // undefined
 ```
 
 ## license
