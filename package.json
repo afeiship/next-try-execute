@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-try-execute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Try execute a method on context.",
   "homepage": "https://js.work",
   "author": {
@@ -44,5 +44,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/afeiship/boilerplate-next-package.git"
-  }
+  },
+  "keywords": [
+    "next",
+    "context",
+    "execute",
+    "method",
+    "try"
+  ]
 }
